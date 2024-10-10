@@ -18,8 +18,8 @@
 		<pattr name = "gain~[24]" value = "327" />
 		<pattr name = "gain~[25]" value = "368" />
 		<pattr name = "gain~[26]" value = "368" />
-		<pattr name = "gain~[27]" value = "0" />
-		<pattr name = "gain~[28]" value = "0" />
+		<pattr name = "gain~[27]" value = "368" />
+		<pattr name = "gain~[28]" value = "368" />
 		<pattr name = "gain~[29]" value = "361" />
 		<pattr name = "gain~[30]" value = "361" />
 		<pattr name = "gain~[31]" value = "337" />
@@ -33,7 +33,7 @@
 		<pattr name = "number[13]" value = "381" />
 		<pattr name = "number[14]" value = "327" />
 		<pattr name = "number[15]" value = "368" />
-		<pattr name = "number[16]" value = "0" />
+		<pattr name = "number[16]" value = "368" />
 		<pattr name = "number[17]" value = "361" />
 		<pattr name = "number[18]" value = "337" />
 		<pattr name = "number[1]" value = "365" />
@@ -56,7 +56,6 @@
 					<pattr name = "gain~" value = "397" />
 					<pattr name = "gain~[1]" value = "397" />
 					<pattr name = "number" value = "397" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[33]">
@@ -64,7 +63,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[32]">
@@ -72,7 +70,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[31]">
@@ -80,7 +77,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[30]">
@@ -88,7 +84,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[29]">
@@ -96,7 +91,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[28]">
@@ -104,7 +98,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[27]">
@@ -112,7 +105,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[26]">
@@ -120,7 +112,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[25]">
@@ -128,7 +119,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[24]">
@@ -136,7 +126,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[23]">
@@ -144,7 +133,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[22]">
@@ -152,7 +140,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[21]">
@@ -160,7 +147,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[20]">
@@ -168,7 +154,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[19]">
@@ -176,7 +161,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[18]">
@@ -184,7 +168,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[17]">
@@ -192,7 +175,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[16]">
@@ -200,7 +182,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[15]">
@@ -208,7 +189,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[14]">
@@ -216,7 +196,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[13]">
@@ -224,7 +203,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[12]">
@@ -232,7 +210,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[11]">
@@ -240,7 +217,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[10]">
@@ -248,7 +224,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[9]">
@@ -256,7 +231,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[8]">
@@ -264,7 +238,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[7]">
@@ -272,7 +245,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[6]">
@@ -280,7 +252,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[5]">
@@ -288,7 +259,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[4]">
@@ -296,7 +266,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[3]">
@@ -304,7 +273,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[2]">
@@ -312,7 +280,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player[1]">
@@ -320,7 +287,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 			<patcher name = "cc_sample_player">
@@ -328,7 +294,6 @@
 					<pattr name = "gain~" value = "365" />
 					<pattr name = "gain~[1]" value = "365" />
 					<pattr name = "number" value = "365" />
-					<pattr name = "toggle" value = "0" />
 				</patcher>
 			</patcher>
 		</patcher>
