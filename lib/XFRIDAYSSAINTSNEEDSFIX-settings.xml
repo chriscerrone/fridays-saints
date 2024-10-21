@@ -2,7 +2,7 @@
 
 <pattrstorage name = "u458018884">
 	<slot number = "1">
-		<pattr name = "click_track_gain[1]" value = "0" />
+		<pattr name = "click_track_gain[1]" value = "56" />
 		<pattr name = "gain~[10]" value = "365" />
 		<pattr name = "gain~[12]" value = "365" />
 		<pattr name = "gain~[13]" value = "365" />
