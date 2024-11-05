@@ -8,7 +8,7 @@
 		<pattr name = "gain~[13]" value = "345" />
 		<pattr name = "gain~[14]" value = "345" />
 		<pattr name = "gain~[15]" value = "389" />
-		<pattr name = "gain~[17]" value = "324" />
+		<pattr name = "gain~[17]" value = "270" />
 		<pattr name = "gain~[19]" value = "331" />
 		<pattr name = "gain~[1]" value = "365" />
 		<pattr name = "gain~[20]" value = "337" />
@@ -27,7 +27,7 @@
 		<pattr name = "gain~[6]" value = "351" />
 		<pattr name = "gain~[8]" value = "349" />
 		<pattr name = "js" value = "" />
-		<pattr name = "number[10]" value = "324" />
+		<pattr name = "number[10]" value = "270" />
 		<pattr name = "number[11]" value = "331" />
 		<pattr name = "number[12]" value = "337" />
 		<pattr name = "number[13]" value = "381" />
