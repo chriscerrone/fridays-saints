@@ -4294,7 +4294,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 34.0, 42.0, 631.0, 208.0 ],
-									"text" : "—— tremolo-steps.txt\n[input] [1/0 on off] [tremolo ms] [0-1 depth] [0-1 squarewave to sine] [0-1 sample rate multiplier] [bit size]\n(sample rate and bitsize use 0 for no effect)\n\n—— reverb-steps_1.txt\n [input] [0-1 activate]\n\n—— reverb-steps_2.txt\n [input] [0-1 activate]\n\n—— reverb-steps_3.txt\n [input] [0-1 activate]\n\n—— input-gain-steps.txt\n [input] [0-1 gain] [ramp time ms]"
+									"text" : "—— tremolo-steps.txt\n[input] [1/0 on off] [tremolo ms] [0-1 depth] [0-1 squarewave to sine] [0-1 sample rate multiplier] [1-24 bit size]\n(sample rate and bitsize use 0 for no effect)\n\n—— reverb-steps_1.txt\n [input] [0-1 activate]\n\n—— reverb-steps_2.txt\n [input] [0-1 activate]\n\n—— reverb-steps_3.txt\n [input] [0-1 activate]\n\n—— input-gain-steps.txt\n [input] [0-1 gain] [ramp time ms]"
 								}
 
 							}
