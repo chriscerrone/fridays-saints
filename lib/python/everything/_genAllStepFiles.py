@@ -219,7 +219,6 @@ if first_real_row is None:
 for idx, r in enumerate(csv_rows):
     if idx < first_real_row:
         continue
-
     # Build context used in all error messages for this row
     line_no = idx + 1  # human-friendly
     raw_step = safe_str(r, 2)
@@ -249,6 +248,8 @@ for idx, r in enumerate(csv_rows):
     trem_onoff      = safe_str(r,16).strip('"')
     trem_channel    = safe_str(r,17).strip('"')
     trem_ms         = safe_str(r,20).strip('"')
+    trem_distort_sr = safe_str(r,23).strip('"')
+    trem_distort_bs = safe_str(r,24).strip('"')
 
 
     # basic skip if no content at all
@@ -256,7 +257,7 @@ for idx, r in enumerate(csv_rows):
         auto_manual, step, millis is not None, reset, play_stop, filename, fadetime,
         mute_muteUnmute, mute_channel, mute_fadetime,
         reverb_channel, reverb_number, reverb_onoff,
-        trem_onoff, trem_channel, trem_ms
+        trem_onoff, trem_channel, trem_ms, trem_distort_sr, trem_distort_bs
     ]):
         continue
 
@@ -278,8 +279,10 @@ for idx, r in enumerate(csv_rows):
         "trem_onoff": trem_onoff,
         "trem_channel": trem_channel,
         "trem_ms": trem_ms,
+        "trem_distort_sr":trem_distort_sr,
+        "trem_distort_bs":trem_distort_bs,
     }
-
+    print(record)
 
     # Validate group completeness / enums / numerics with rich context
     _validate_groups(ctx, record)
@@ -447,9 +450,15 @@ for row in rows:
         else:
             print(f"Skipping tremolo entry at step {row.get('step','?')}: 'on' requires trem_ms.")
             continue
-
+    trem_distort_sr = row.get('trem_distort_sr')
+    trem_distort_bs = row.get('trem_distort_bs')
+    print(f"{trem_distort_sr} {trem_distort_bs}")
+    if trem_distort_sr == "":
+        trem_distort_sr = 0
+    if trem_distort_bs == "":
+        trem_distort_bs = 0
     # per-channel pack: [onoff] [channel] [trem_ms] [0] [0]
-    trem_instructions += f" {onoff} {ch} {tms} 0 0"
+    trem_instructions += f" {onoff} {ch} {tms} 0 0 {trem_distort_sr} {trem_distort_bs}"
 
 _flush_trem(last_real_cue, trem_instructions, output_lines)
 
