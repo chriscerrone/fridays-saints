@@ -1,0 +1,25 @@
+# ignore the files we generate
+**/*.csv
+**/*.txt
+
+# Python virtual environments
+venv/
+.env/
+env/
+ENV/
+.venv/
+
+# pyenv virtual environments
+.pyenv/
+.python-version
+
+# Ignore venv subfolders anywhere in the repo
+**/bin/
+**/include/
+**/lib*/
+**/Scripts/        # for Windows virtualenvs
+**/pyvenv.cfg
+
+# Optional caches and metadata
+pip-wheel-metadata/
+*.egg-info/
