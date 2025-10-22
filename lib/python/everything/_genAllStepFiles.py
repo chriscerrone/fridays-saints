@@ -457,7 +457,7 @@ for row in rows:
         trem_distort_sr = 0
     if trem_distort_bs == "":
         trem_distort_bs = 0
-    # per-channel pack: [onoff] [channel] [trem_ms] [0] [0]
+    # per-channel pack: [channel] [onoff] [trem_ms] [0] [0]
     trem_instructions += f" {ch} {onoff} {tms} 0 0 {trem_distort_sr} {trem_distort_bs}"
 
 _flush_trem(last_real_cue, trem_instructions, output_lines)
