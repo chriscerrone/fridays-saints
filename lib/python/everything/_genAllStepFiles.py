@@ -468,6 +468,7 @@ for row in rows:
     if trem_depth == "":
         trem_depth = 0
 
+    # per-channel pack: [channel] [onoff] [trem_ms] [0] [0]
     trem_instructions += f" {ch} {onoff} {tms} {trem_depth} {trem_sqsi} {trem_distort_sr} {trem_distort_bs}"
 
 _flush_trem(last_real_cue, trem_instructions, output_lines)
