@@ -489,7 +489,7 @@ for row in rows:
     if (row['step'] != '') and (row['auto_manual'] != 'manual'):
         resetbit = " reset" if row['reset'] == 'yes' else ""
         millis_str = "" if row['millis'] is None else str(row['millis'])
-        lineToPrint = f"{row['step']}, {millis_str}{resetbit};"
+        lineToPrint = f"{row['step']}, {millis_str} {resetbit};"
         output_lines.append(lineToPrint)
 
 with open(tmp_prefix+sequencer_file, 'w') as f:
