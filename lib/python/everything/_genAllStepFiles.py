@@ -465,8 +465,14 @@ for row in rows:
         trem_distort_bs = 0
     if trem_sqsi == "":
         trem_sqsi = 0
+        if(onoff == 1):
+            print(f"Skipping tremolo entry at step {row.get('step','?')}: missing/invalid square/sine info.")
+            continue
     if trem_depth == "":
         trem_depth = 0
+        if(onoff == 1):
+            print(f"Skipping tremolo entry at step {row.get('step','?')}: missing/invalid square/sine info.")
+            continue
 
     # per-channel pack: [channel] [onoff] [trem_ms] [0] [0]
     trem_instructions += f" {ch} {onoff} {tms} {trem_depth} {trem_sqsi} {trem_distort_sr} {trem_distort_bs}"
