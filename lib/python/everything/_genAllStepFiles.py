@@ -18,6 +18,8 @@ sheetID = "1sBLeF3VSvV0pIf2hzJcaeffZHRXLFG9wFwVOBMtlzJQ"
 # Thanks!
 
 url = f'https://docs.google.com/spreadsheets/d/{sheetID}/gviz/tq?tqx=out:csv&sheet=0'
+url = f'https://docs.google.com/spreadsheets/d/{sheetID}/export?format=csv'
+
 print("requesting google sheet")
 try:
     resp = requests.get(url)
@@ -208,7 +210,7 @@ first_real_row = None
 
 # detect the start: original logic used a line containing "Cue Information"
 for idx, r in enumerate(csv_rows):
-    if any(("Cue Information" in (c or "")) for c in r):
+    if any(("Mvmt #" in (c or "")) for c in r):
         first_real_row = idx + 2  # same +2 offset as before
         break
 
@@ -441,7 +443,7 @@ for row in rows:
 
     ch = safe_int(row.get('trem_channel'), None)
     if ch is None:
-        print(f"Skipping tremolo entry at step {row.get('step','?')}: missing/invalid channel.")
+        print(f"Skipping tremolo entry at step {row['step']}: missing/invalid channel.")
         continue
 
     onoff = 1 if play == 'on' else 0
@@ -453,7 +455,8 @@ for row in rows:
         if onoff == 0:
             tms = 0
         else:
-            print(f"Skipping tremolo entry at step {row.get('step','?')}: 'on' requires trem_ms.")
+            print("here????")
+            print(f"Skipping tremolo entry at step {row['step']}: 'on' requires trem_ms.")
             continue
     trem_sqsi = row.get('trem_sqsi')
     trem_depth = row.get('trem_depth')
