@@ -5,7 +5,7 @@
 		<pattr name = "click_track_gain[1]" value = "127" />
 		<pattr name = "gain~[10]" value = "365" />
 		<pattr name = "gain~[12]" value = "392" />
-		<pattr name = "gain~[14]" value = "345" />
+		<pattr name = "gain~[14]" value = "337" />
 		<pattr name = "gain~[15]" value = "389" />
 		<pattr name = "gain~[17]" value = "270" />
 		<pattr name = "gain~[19]" value = "331" />
@@ -61,7 +61,7 @@
 		<pattr name = "number[5]" value = "351" />
 		<pattr name = "number[6]" value = "365" />
 		<pattr name = "number[7]" value = "392" />
-		<pattr name = "number[8]" value = "345" />
+		<pattr name = "number[8]" value = "337" />
 		<pattr name = "number[9]" value = "389" />
 		<pattr name = "pan[1]" value = "0." />
 		<pattr name = "pan[2]" value = "0." />

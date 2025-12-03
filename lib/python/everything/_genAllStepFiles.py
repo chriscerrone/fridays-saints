@@ -18,6 +18,8 @@ sheetID = "1sBLeF3VSvV0pIf2hzJcaeffZHRXLFG9wFwVOBMtlzJQ"
 # Thanks!
 
 url = f'https://docs.google.com/spreadsheets/d/{sheetID}/gviz/tq?tqx=out:csv&sheet=0'
+url = f'https://docs.google.com/spreadsheets/d/{sheetID}/export?format=csv'
+
 print("requesting google sheet")
 try:
     resp = requests.get(url)
@@ -208,7 +210,7 @@ first_real_row = None
 
 # detect the start: original logic used a line containing "Cue Information"
 for idx, r in enumerate(csv_rows):
-    if any(("Cue Information" in (c or "")) for c in r):
+    if any(("Mvmt #" in (c or "")) for c in r):
         first_real_row = idx + 2  # same +2 offset as before
         break
 
@@ -248,6 +250,8 @@ for idx, r in enumerate(csv_rows):
     trem_onoff      = safe_str(r,16).strip('"')
     trem_channel    = safe_str(r,17).strip('"')
     trem_ms         = safe_str(r,20).strip('"')
+    trem_depth      = safe_str(r,21).strip('"')
+    trem_sqsi       = safe_str(r,22).strip('"')
     trem_distort_sr = safe_str(r,23).strip('"')
     trem_distort_bs = safe_str(r,24).strip('"')
 
@@ -257,7 +261,7 @@ for idx, r in enumerate(csv_rows):
         auto_manual, step, millis is not None, reset, play_stop, filename, fadetime,
         mute_muteUnmute, mute_channel, mute_fadetime,
         reverb_channel, reverb_number, reverb_onoff,
-        trem_onoff, trem_channel, trem_ms, trem_distort_sr, trem_distort_bs
+        trem_onoff, trem_channel, trem_ms, trem_distort_sr, trem_distort_bs, trem_sqsi, trem_depth
     ]):
         continue
 
@@ -279,8 +283,11 @@ for idx, r in enumerate(csv_rows):
         "trem_onoff": trem_onoff,
         "trem_channel": trem_channel,
         "trem_ms": trem_ms,
+        "trem_depth": trem_depth,
+        "trem_sqsi": trem_sqsi,
         "trem_distort_sr":trem_distort_sr,
         "trem_distort_bs":trem_distort_bs,
+
     }
     print(record)
 
@@ -436,7 +443,7 @@ for row in rows:
 
     ch = safe_int(row.get('trem_channel'), None)
     if ch is None:
-        print(f"Skipping tremolo entry at step {row.get('step','?')}: missing/invalid channel.")
+        print(f"Skipping tremolo entry at step {row['step']}: missing/invalid channel.")
         continue
 
     onoff = 1 if play == 'on' else 0
@@ -448,17 +455,30 @@ for row in rows:
         if onoff == 0:
             tms = 0
         else:
-            print(f"Skipping tremolo entry at step {row.get('step','?')}: 'on' requires trem_ms.")
+            print("here????")
+            print(f"Skipping tremolo entry at step {row['step']}: 'on' requires trem_ms.")
             continue
+    trem_sqsi = row.get('trem_sqsi')
+    trem_depth = row.get('trem_depth')
     trem_distort_sr = row.get('trem_distort_sr')
     trem_distort_bs = row.get('trem_distort_bs')
-    print(f"{trem_distort_sr} {trem_distort_bs}")
     if trem_distort_sr == "":
         trem_distort_sr = 0
     if trem_distort_bs == "":
         trem_distort_bs = 0
+    if trem_sqsi == "":
+        trem_sqsi = 0
+        if(onoff == 1):
+            print(f"Skipping tremolo entry at step {row.get('step','?')}: missing/invalid square/sine info.")
+            continue
+    if trem_depth == "":
+        trem_depth = 0
+        if(onoff == 1):
+            print(f"Skipping tremolo entry at step {row.get('step','?')}: missing/invalid square/sine info.")
+            continue
+
     # per-channel pack: [channel] [onoff] [trem_ms] [0] [0]
-    trem_instructions += f" {ch} {onoff} {tms} 0 0 {trem_distort_sr} {trem_distort_bs}"
+    trem_instructions += f" {ch} {onoff} {tms} {trem_depth} {trem_sqsi} {trem_distort_sr} {trem_distort_bs}"
 
 _flush_trem(last_real_cue, trem_instructions, output_lines)
 
